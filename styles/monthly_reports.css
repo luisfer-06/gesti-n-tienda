@@ -1,0 +1,259 @@
+body {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.bg-gray-50 {
+    background-color: #F9FAFB;
+}
+
+.nav {
+    background-color: #4F46E5;
+    color: white;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.logo-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.logo-text {
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #4338CA;
+}
+
+.nav-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.25rem;
+}
+
+.dropdown {
+    position: relative;
+    margin-left: 32rem;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 0.375rem;
+    padding: 0.5rem 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    color: black;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: #F3F4F6;
+}
+
+/* Main Content Styles */
+.main {
+    padding: 2.5rem 0;
+}
+
+.main-container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.main-content {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.main-title {
+    font-size: 3.75rem;
+    font-weight: 800;
+    color: #111827;
+    line-height: 1;
+    margin-bottom: 1.25rem;
+} 
+
+.main-title b{
+    color: #4F46E5;
+    border-bottom: 2px solid #4F46E5;
+}
+
+.main-description {
+    font-size: 1.25rem;
+    color: #6B7280;
+    max-width: 36rem;
+    margin: 0 auto;
+}
+
+.features {
+    margin-top: 4rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+@media (min-width: 640px) {
+    .features-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .features-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.feature-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.3s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.feature-card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.feature-icon-wrapper {
+    display: inline-flex;
+    padding: 0.75rem;
+    background-color: #EEF2FF;
+    border-radius: 0.5rem;
+    color: #4F46E5;
+}
+
+.feature-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.feature-content {
+    margin-top: 2rem;
+}
+
+.feature-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #111827;
+    margin-bottom: 0.5rem;
+}
+
+.feature-description {
+    font-size: 0.875rem;
+    color: #6B7280;
+}
+
+.infos-monthly{
+    color: #333;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 5px;
+    background: #F9FAFB;
+
+    &:hover{
+        border: 1px solid #111827;
+        transition: none 0.5s ease-in;
+    }
+}
+
+.button-infos{
+    color: #333;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 5px;
+    background: #F9FAFB;
+
+    &:hover{
+        border: 1px solid #111827;
+        transition: none 0.5s ease-in;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+td {
+    border: 1px solid #ccc; 
+    padding: 8px;          
+}
+
+.text-right {
+    text-align: right;
+}
+
+.p-2 {
+    padding: 8px;
+}
+
+.border {
+    border: 1px solid #ccc;
+}
